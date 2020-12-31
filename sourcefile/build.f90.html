@@ -262,35 +262,34 @@
     <section>
       <h2><span class="anchor" id="src"></span>Source Code</h2>
     <div class="hl"><pre><span></span><a name="ln-1"></a><span class="c">! This file is part of toml-f.</span>
-<a name="ln-2"></a><span class="c">!</span>
-<a name="ln-3"></a><span class="c">! Copyright (C) 2019-2020 Sebastian Ehlert</span>
-<a name="ln-4"></a><span class="c">!</span>
-<a name="ln-5"></a><span class="c">! Licensed under either of Apache License, Version 2.0 or MIT license</span>
-<a name="ln-6"></a><span class="c">! at your option; you may not use this file except in compliance with</span>
-<a name="ln-7"></a><span class="c">! the License.</span>
-<a name="ln-8"></a><span class="c">!</span>
-<a name="ln-9"></a><span class="c">! Unless required by applicable law or agreed to in writing, software</span>
-<a name="ln-10"></a><span class="c">! distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
-<a name="ln-11"></a><span class="c">! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
-<a name="ln-12"></a><span class="c">! See the License for the specific language governing permissions and</span>
-<a name="ln-13"></a><span class="c">! limitations under the License.</span>
-<a name="ln-14"></a>
-<a name="ln-15"></a><span class="c">!&gt; Functions to build a TOML data structures</span>
-<a name="ln-16"></a><span class="c">!&gt;</span>
-<a name="ln-17"></a><span class="c">!&gt; The build module defines a high level interface to work with TOML data structures</span>
-<a name="ln-18"></a><span class="c">!&gt; and construct them in a convenient way.</span>
-<a name="ln-19"></a><span class="k">module </span><span class="n">tomlf_build</span>
-<a name="ln-20"></a>   <span class="k">use </span><span class="n">tomlf_build_array</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span>
-<a name="ln-21"></a>   <span class="k">use </span><span class="n">tomlf_build_keyval</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span>
-<a name="ln-22"></a>   <span class="k">use </span><span class="n">tomlf_build_merge</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">merge_table</span><span class="p">,</span> <span class="n">merge_array</span>
-<a name="ln-23"></a>   <span class="k">use </span><span class="n">tomlf_build_table</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span>
-<a name="ln-24"></a>   <span class="k">implicit none</span>
-<a name="ln-25"></a><span class="k">   private</span>
-<a name="ln-26"></a>
-<a name="ln-27"></a><span class="k">   public</span> <span class="kd">::</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span><span class="p">,</span> <span class="n">merge_table</span><span class="p">,</span> <span class="n">merge_array</span>
+<a name="ln-2"></a><span class="c">! SPDX-Identifier: Apache-2.0 OR MIT</span>
+<a name="ln-3"></a><span class="c">!</span>
+<a name="ln-4"></a><span class="c">! Licensed under either of Apache License, Version 2.0 or MIT license</span>
+<a name="ln-5"></a><span class="c">! at your option; you may not use this file except in compliance with</span>
+<a name="ln-6"></a><span class="c">! the License.</span>
+<a name="ln-7"></a><span class="c">!</span>
+<a name="ln-8"></a><span class="c">! Unless required by applicable law or agreed to in writing, software</span>
+<a name="ln-9"></a><span class="c">! distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<a name="ln-10"></a><span class="c">! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<a name="ln-11"></a><span class="c">! See the License for the specific language governing permissions and</span>
+<a name="ln-12"></a><span class="c">! limitations under the License.</span>
+<a name="ln-13"></a>
+<a name="ln-14"></a><span class="c">!&gt; Functions to build a TOML data structures</span>
+<a name="ln-15"></a><span class="c">!&gt;</span>
+<a name="ln-16"></a><span class="c">!&gt; The build module defines a high level interface to work with TOML data structures</span>
+<a name="ln-17"></a><span class="c">!&gt; and construct them in a convenient way.</span>
+<a name="ln-18"></a><span class="k">module </span><span class="n">tomlf_build</span>
+<a name="ln-19"></a>   <span class="k">use </span><span class="n">tomlf_build_array</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span>
+<a name="ln-20"></a>   <span class="k">use </span><span class="n">tomlf_build_keyval</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span>
+<a name="ln-21"></a>   <span class="k">use </span><span class="n">tomlf_build_merge</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">merge_table</span><span class="p">,</span> <span class="n">merge_array</span>
+<a name="ln-22"></a>   <span class="k">use </span><span class="n">tomlf_build_table</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span>
+<a name="ln-23"></a>   <span class="k">implicit none</span>
+<a name="ln-24"></a><span class="k">   private</span>
+<a name="ln-25"></a>
+<a name="ln-26"></a><span class="k">   public</span> <span class="kd">::</span> <span class="n">get_value</span><span class="p">,</span> <span class="n">set_value</span><span class="p">,</span> <span class="n">merge_table</span><span class="p">,</span> <span class="n">merge_array</span>
+<a name="ln-27"></a>
 <a name="ln-28"></a>
-<a name="ln-29"></a>
-<a name="ln-30"></a><span class="k">end module </span><span class="n">tomlf_build</span>
+<a name="ln-29"></a><span class="k">end module </span><span class="n">tomlf_build</span>
 </pre></div>
 
     </section>
@@ -309,7 +308,7 @@
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2020-12-19 14:28  
+             on 2020-12-31 10:29  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> TOML-Fortran was developed by Sebastian Ehlert</p></div>
