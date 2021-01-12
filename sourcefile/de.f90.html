@@ -275,10 +275,10 @@
 <a name="ln-12"></a><span class="c">! limitations under the License.</span>
 <a name="ln-13"></a>
 <a name="ln-14"></a><span class="k">module </span><span class="n">tomlf_de</span>
-<a name="ln-15"></a>   <span class="k">use </span><span class="n">tomlf_constants</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">TOML_NEWLINE</span>
-<a name="ln-16"></a>   <span class="k">use </span><span class="n">tomlf_de_character</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">toml_character_tokenizer</span><span class="p">,</span> <span class="n">new</span>
-<a name="ln-17"></a>   <span class="k">use </span><span class="n">tomlf_error</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">toml_error</span><span class="p">,</span> <span class="n">io_error</span>
-<a name="ln-18"></a>   <span class="k">use </span><span class="n">tomlf_type</span><span class="p">,</span> <span class="n">only</span> <span class="p">:</span> <span class="n">toml_table</span>
+<a name="ln-15"></a>   <span class="k">use </span><span class="n">tomlf_constants</span><span class="p">,</span> <span class="k">only</span> <span class="p">:</span> <span class="n">TOML_NEWLINE</span>
+<a name="ln-16"></a>   <span class="k">use </span><span class="n">tomlf_de_character</span><span class="p">,</span> <span class="k">only</span> <span class="p">:</span> <span class="n">toml_character_tokenizer</span><span class="p">,</span> <span class="n">new</span>
+<a name="ln-17"></a>   <span class="k">use </span><span class="n">tomlf_error</span><span class="p">,</span> <span class="k">only</span> <span class="p">:</span> <span class="n">toml_error</span><span class="p">,</span> <span class="n">io_error</span>
+<a name="ln-18"></a>   <span class="k">use </span><span class="n">tomlf_type</span><span class="p">,</span> <span class="k">only</span> <span class="p">:</span> <span class="n">toml_table</span>
 <a name="ln-19"></a>   <span class="k">implicit none</span>
 <a name="ln-20"></a><span class="k">   private</span>
 <a name="ln-21"></a>
@@ -297,7 +297,7 @@
 <a name="ln-34"></a><span class="c">!&gt; Parse a TOML input from a given IO unit.</span>
 <a name="ln-35"></a><span class="k">subroutine </span><span class="n">toml_parse_unit</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">unit</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
 <a name="ln-36"></a>   <span class="k">use </span><span class="n">iso_fortran_env</span>
-<a name="ln-37"></a>   <span class="k">use </span><span class="n">tomlf_constants</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">TOML_NEWLINE</span>
+<a name="ln-37"></a>   <span class="k">use </span><span class="n">tomlf_constants</span><span class="p">,</span> <span class="k">only</span><span class="p">:</span> <span class="n">TOML_NEWLINE</span>
 <a name="ln-38"></a>   <span class="k">type</span><span class="p">(</span><span class="n">toml_table</span><span class="p">),</span> <span class="k">allocatable</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="kd">::</span> <span class="n">table</span>
 <a name="ln-39"></a>   <span class="kt">integer</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">unit</span>
 <a name="ln-40"></a>   <span class="k">type</span><span class="p">(</span><span class="n">toml_error</span><span class="p">),</span> <span class="k">allocatable</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">),</span> <span class="k">optional</span> <span class="kd">::</span> <span class="n">error</span>
@@ -341,7 +341,7 @@
 <a name="ln-78"></a>
 <a name="ln-79"></a><span class="c">!&gt; Wrapper to parse a TOML string.</span>
 <a name="ln-80"></a><span class="k">subroutine </span><span class="n">toml_parse_string</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">conf</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span>
-<a name="ln-81"></a>   <span class="k">use </span><span class="n">iso_fortran_env</span><span class="p">,</span> <span class="n">only</span><span class="p">:</span> <span class="n">error_unit</span>
+<a name="ln-81"></a>   <span class="k">use </span><span class="n">iso_fortran_env</span><span class="p">,</span> <span class="k">only</span><span class="p">:</span> <span class="n">error_unit</span>
 <a name="ln-82"></a>   <span class="k">type</span><span class="p">(</span><span class="n">toml_table</span><span class="p">),</span> <span class="k">allocatable</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span> <span class="kd">::</span> <span class="n">table</span>
 <a name="ln-83"></a>   <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span> <span class="k">target</span> <span class="kd">::</span> <span class="n">conf</span>
 <a name="ln-84"></a>   <span class="k">type</span><span class="p">(</span><span class="n">toml_error</span><span class="p">),</span> <span class="k">allocatable</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">),</span> <span class="k">optional</span> <span class="kd">::</span> <span class="n">error</span>
@@ -385,7 +385,7 @@
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2021-01-07 14:29  
+             on 2021-01-12 10:14  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> TOML-Fortran was developed by Sebastian Ehlert</p></div>
