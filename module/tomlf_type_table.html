@@ -142,7 +142,7 @@
   <ol class="breadcrumb in-well text-right">
   
     
-     <li><a href='../sourcefile/table.f90~2.html'>table.f90</a></li>
+     <li><a href='../sourcefile/table.f90.html'>table.f90</a></li>
     
   
      <li class="active">tomlf_type_table</li>
@@ -180,7 +180,7 @@
   <div id="inters-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/tomlf_type_table.html#interface-new~2">new</a>
+      <a class="list-group-item" href="../module/tomlf_type_table.html#interface-new~4">new</a>
       
       <a class="list-group-item" href="../module/tomlf_type_table.html#interface-toml_table">toml_table</a>
       
@@ -286,7 +286,7 @@
   <div id="inters-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/tomlf_type_table.html#interface-new~2">new</a>
+      <a class="list-group-item" href="../module/tomlf_type_table.html#interface-new~4">new</a>
       
       <a class="list-group-item" href="../module/tomlf_type_table.html#interface-toml_table">toml_table</a>
       
@@ -346,7 +346,7 @@
    
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="interface-new~2"></span><h3>public interface <a href='../interface/new~2.html'>new</a>
+  <div class="panel-heading codesum"><span class="anchor" id="interface-new~4"></span><h3>public interface <a href='../interface/new~4.html'>new</a>
     
   </h3></div>
   
@@ -524,7 +524,7 @@ private function new_table_func() result(self)
   
 <tr>
   
-  <td><span class="anchor" id="variable-inline"></span>logical,</td>
+  <td><span class="anchor" id="variable-inline~2"></span>logical,</td>
   
   <td>public</td>
   <td></td><td>::</td>
@@ -538,7 +538,7 @@ private function new_table_func() result(self)
   
 <tr>
   
-  <td><span class="anchor" id="variable-key~2"></span>character(kind=tfc,len=:),</td>
+  <td><span class="anchor" id="variable-key"></span>character(kind=tfc,len=:),</td>
   
   <td>public,</td>
   <td>allocatable</td><td>::</td>
@@ -552,7 +552,7 @@ private function new_table_func() result(self)
   
 <tr>
   
-  <td><span class="anchor" id="variable-list"></span>class(<a href='../type/toml_structure.html'>toml_structure</a>),</td>
+  <td><span class="anchor" id="variable-list~2"></span>class(<a href='../type/toml_structure.html'>toml_structure</a>),</td>
   
   <td>public,</td>
   <td>allocatable</td><td>::</td>
@@ -590,19 +590,19 @@ private function new_table_func() result(self)
        <tr><td>procedure, public :: <strong><a href='../type/toml_value.html#boundprocedure-accept'>accept</a></strong>  </td>
        <td><p>Accept a visitor to transverse the data structure</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-delete~3'>delete</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-delete'>delete</a></strong>  </td>
        <td><p>Delete TOML value at a given key</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-destroy~4'>destroy</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-destroy~3'>destroy</a></strong>  </td>
        <td><p>Release allocation hold by TOML table</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-get~3'>get</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-get~2'>get</a></strong>  </td>
        <td><p>Get the TOML value associated with the respective key</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/toml_value.html#boundprocedure-get_key'>get_key</a></strong>  </td>
        <td><p>Get escaped key to TOML value</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-get_keys~3'>get_keys</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-get_keys'>get_keys</a></strong>  </td>
        <td><p>Get list of all keys in this table</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-has_key'>has_key</a></strong>  </td>
@@ -611,7 +611,7 @@ private function new_table_func() result(self)
        <tr><td>procedure, public :: <strong><a href='../type/toml_value.html#boundprocedure-match_key'>match_key</a></strong>  </td>
        <td><p>Compare raw key of TOML value to input key</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-push_back~3'>push_back</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_table.html#boundprocedure-push_back~2'>push_back</a></strong>  </td>
        <td><p>Append value to table (checks automatically for key)</p></td></tr>
       
        </tbody>
@@ -710,7 +710,7 @@ public subroutine <a href='../proc/new_table.html'>new_table</a>(self)
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2021-05-06 06:30  
+             on 2021-05-15 08:45  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> TOML-Fortran was developed by Sebastian Ehlert</p></div>
