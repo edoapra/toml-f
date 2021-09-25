@@ -226,17 +226,17 @@
     <div class="col-md-9" id='text'>
     <p>Definition of the TOML tokens and the possible states of the tokenizer</p>
 <p>The tokenizer implementation has to produce tokens from any input source
- and is usually only required for string tokens to provide an actual character
- representation.</p>
+and is usually only required for string tokens to provide an actual character
+representation.</p>
 <p>The tokenization is partly dependent on the context, as the dot is not in
- all states actually a token, also due to the rather complex syntax of
- table headers, whitespace is precious and has to be reported as token.</p>
+all states actually a token, also due to the rather complex syntax of
+table headers, whitespace is precious and has to be reported as token.</p>
 <p>Not required but usually helpful is the creation of a context, usually
- represented by the current line (or a chunk of lines for multiline strings),
- which can be passed to the error handler to create more detailed output.
- A tokenizer working with the complete TOML document as character sequence
- can easily create the context, while it might be incomplete or missing in
- case of a stream processing.</p>
+represented by the current line (or a chunk of lines for multiline strings),
+which can be passed to the error handler to create more detailed output.
+A tokenizer working with the complete TOML document as character sequence
+can easily create the context, while it might be incomplete or missing in
+case of a stream processing.</p>
       <br>
     
   
@@ -249,13 +249,13 @@
       <li class="list-group-item">
   <ul class="list-inline">
     
-    <li><a href='../module/tomlf_constants.html'>tomlf_constants</a></li>
-    
-    <li><a href='../module/tomlf_error.html'>tomlf_error</a></li>
+    <li><a href='../module/tomlf_type.html'>tomlf_type</a></li>
     
     <li><a href='../module/tomlf_utils.html'>tomlf_utils</a></li>
     
-    <li><a href='../module/tomlf_type.html'>tomlf_type</a></li>
+    <li><a href='../module/tomlf_constants.html'>tomlf_constants</a></li>
+    
+    <li><a href='../module/tomlf_error.html'>tomlf_error</a></li>
     
   </ul>
       </li>
@@ -383,63 +383,6 @@
     <p>Basic TOML token, produced by a TOML tokenizer</p>
     
      
-     <h4>Components</h4>
-    
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th><th>Visibility</th>
-
-<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-len"></span>integer,</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>len</strong></td><td> =</td><td>0</td><td><p>Length of the token at ptr</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-ptr~2"></span>character(len=:),</td>
-  
-  <td>public,</td>
-  <td>pointer</td><td>::</td>
-  <td><strong>ptr</strong></td><td>=> </td><td>null()</td><td><p>Character representation of the token</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-tok"></span>integer,</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>tok</strong></td><td> =</td><td>toml_tokentype%invalid</td><td><p>Actual tokentype</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-     
      
           
      
@@ -458,105 +401,6 @@
     <p>Abstract TOML tokenizer</p>
     
      
-     <h4>Components</h4>
-    
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th><th>Visibility</th>
-
-<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-current"></span>type(<a href='../type/toml_table.html'>toml_table</a>),</td>
-  
-  <td>public,</td>
-  <td>pointer</td><td>::</td>
-  <td><strong>current</strong></td><td>=> </td><td>null()</td><td><p>Pointer to the current table while transversing a table path</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-error"></span>type(<a href='../type/toml_error.html'>toml_error</a>),</td>
-  
-  <td>public,</td>
-  <td>allocatable</td><td>::</td>
-  <td><strong>error</strong></td><td></td><td></td><td><p>Error buffer, if allocated an error has occurred</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-finished"></span>logical,</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>finished</strong></td><td> =</td><td>.false.</td><td><p>Signals if the tokenizer has finished (EOF has been reached)</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-line"></span>type(<a href='../type/toml_context.html'>toml_context</a>),</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>line</strong></td><td></td><td></td><td><p>Current line (for error handling)</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-root"></span>type(<a href='../type/toml_table.html'>toml_table</a>),</td>
-  
-  <td>public,</td>
-  <td>allocatable</td><td>::</td>
-  <td><strong>root</strong></td><td></td><td></td><td><p>Root table</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-tok~2"></span>type(<a href='../type/toml_token.html'>toml_token</a>),</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>tok</strong></td><td></td><td></td><td><p>Current token</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-     
      
           
      
@@ -564,7 +408,7 @@
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>procedure(next_token), public :: <strong><a href='../type/toml_tokenizer.html#boundprocedure-next_token~2'>next_token</a></strong>  </td>
+       <tr><td>procedure(next_token), public :: <strong><a href='../type/toml_tokenizer.html#boundprocedure-next_token'>next_token</a></strong>  </td>
        <td><p>Return next token</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/toml_tokenizer.html#boundprocedure-parse'>parse</a></strong>  => parse_root </td>
@@ -602,7 +446,7 @@
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-             on 2021-07-22 12:06  
+             on 2021-09-25 19:02  
             
           </p>
         </div>

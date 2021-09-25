@@ -138,9 +138,9 @@ All Procedures &ndash; TOML-Fortran
 			 
 			   <tr><td><a href='../interface/get_value.html'>get_value</a></td><td><a href='../module/tomlf_build_array.html'>tomlf_build_array</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML arrays</p></td></tr>
 			 
-			   <tr><td><a href='../interface/get_value~2.html'>get_value</a></td><td><a href='../module/tomlf_build_keyval.html'>tomlf_build_keyval</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML values</p></td></tr>
+			   <tr><td><a href='../interface/get_value~2.html'>get_value</a></td><td><a href='../module/tomlf_build_table.html'>tomlf_build_table</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML tables</p></td></tr>
 			 
-			   <tr><td><a href='../interface/get_value~3.html'>get_value</a></td><td><a href='../module/tomlf_build_table.html'>tomlf_build_table</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML tables</p></td></tr>
+			   <tr><td><a href='../interface/get_value~3.html'>get_value</a></td><td><a href='../module/tomlf_build_keyval.html'>tomlf_build_keyval</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML values</p></td></tr>
 			 
 			   <tr><td><a href='../proc/io_error.html'>io_error</a></td><td><a href='../module/tomlf_error.html'>tomlf_error</a></td><td>Subroutine</td><td><p>IO runtime error</p></td></tr>
 			 
@@ -158,17 +158,17 @@ All Procedures &ndash; TOML-Fortran
 			 
 			   <tr><td><a href='../interface/new~2.html'>new</a></td><td><a href='../module/tomlf_type_array.html'>tomlf_type_array</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
 			 
-			   <tr><td><a href='../interface/new~3.html'>new</a></td><td><a href='../module/tomlf_type_keyval.html'>tomlf_type_keyval</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
+			   <tr><td><a href='../interface/new~3.html'>new</a></td><td><a href='../module/tomlf_type_table.html'>tomlf_type_table</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
 			 
-			   <tr><td><a href='../interface/new~4.html'>new</a></td><td><a href='../module/tomlf_type_table.html'>tomlf_type_table</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
+			   <tr><td><a href='../interface/new~4.html'>new</a></td><td><a href='../module/tomlf_type_keyval.html'>tomlf_type_keyval</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
 			 
 			   <tr><td><a href='../interface/new~5.html'>new</a></td><td><a href='../module/tomlf_de_character.html'>tomlf_de_character</a></td><td>Interface</td><td></td></tr>
 			 
 			   <tr><td><a href='../proc/new_array.html'>new_array</a></td><td><a href='../module/tomlf_type_array.html'>tomlf_type_array</a></td><td>Subroutine</td><td><p>Constructor to create a new TOML array and allocate the internal storage</p></td></tr>
 			 
 			   <tr><td><a href='../proc/new_character_tokenizer.html'>new_character_tokenizer</a></td><td><a href='../module/tomlf_de_character.html'>tomlf_de_character</a></td><td>Subroutine</td><td><p>Constructor for the deserializer implementation.
- connect deserializer to configuration
- first token is an artifical newline</p></td></tr>
+connect deserializer to configuration
+first token is an artifical newline</p></td></tr>
 			 
 			   <tr><td><a href='../proc/new_keyval.html'>new_keyval</a></td><td><a href='../module/tomlf_type_keyval.html'>tomlf_type_keyval</a></td><td>Subroutine</td><td><p>Constructor to create a new TOML key-value pair</p></td></tr>
 			 
@@ -184,9 +184,9 @@ All Procedures &ndash; TOML-Fortran
 			 
 			   <tr><td><a href='../interface/set_value.html'>set_value</a></td><td><a href='../module/tomlf_build_array.html'>tomlf_build_array</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML arrays</p></td></tr>
 			 
-			   <tr><td><a href='../interface/set_value~2.html'>set_value</a></td><td><a href='../module/tomlf_build_keyval.html'>tomlf_build_keyval</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML values</p></td></tr>
+			   <tr><td><a href='../interface/set_value~2.html'>set_value</a></td><td><a href='../module/tomlf_build_table.html'>tomlf_build_table</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML tables</p></td></tr>
 			 
-			   <tr><td><a href='../interface/set_value~3.html'>set_value</a></td><td><a href='../module/tomlf_build_table.html'>tomlf_build_table</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML tables</p></td></tr>
+			   <tr><td><a href='../interface/set_value~3.html'>set_value</a></td><td><a href='../module/tomlf_build_keyval.html'>tomlf_build_keyval</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML values</p></td></tr>
 			 
 			   <tr><td><a href='../interface/sort.html'>sort</a></td><td><a href='../module/tomlf_utils_sort.html'>tomlf_utils_sort</a></td><td>Interface</td><td><p>Create overloaded interface for export</p></td></tr>
 			 
@@ -249,7 +249,7 @@ All Procedures &ndash; TOML-Fortran
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-             on 2021-07-22 12:06  
+             on 2021-09-25 19:02  
             
           </p>
         </div>
