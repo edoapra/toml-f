@@ -136,21 +136,21 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title="<p> 2.0% of total for procedures.</p>Including implementation: 177 statements, 26.9% of total for procedures.">13 statements</a>
+    title="<p> 3.6% of total for procedures.</p>Including implementation: 373 statements, 56.7% of total for procedures.">24 statements</a>
      </li> 
      
      
      
-    <li><i class="fa fa-code"></i><a href="../src/array.f90"> Source File</a></li>
+    <li><i class="fa fa-code"></i><a href="../src/table.f90"> Source File</a></li>
      
      
   </ul>
   <ol class="breadcrumb in-well text-right">
   
     
-     <li><a href='../sourcefile/array.f90.html'>array.f90</a></li>
+     <li><a href='../sourcefile/table.f90~2.html'>table.f90</a></li>
     
-     <li><a href='../module/tomlf_build_array.html'>tomlf_build_array</a></li>
+     <li><a href='../module/tomlf_build_table.html'>tomlf_build_table</a></li>
     
   
      <li class="active">get_value</li>
@@ -198,27 +198,49 @@
   <div id="modprocs-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_table">get_elem_table</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_table">get_child_table</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_array">get_elem_array</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_array">get_child_array</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_keyval">get_elem_keyval</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_keyval">get_child_keyval</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_string">get_elem_value_string</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_float_sp">get_child_value_float_sp</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_float_sp">get_elem_value_float_sp</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_float_dp">get_child_value_float_dp</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_float_dp">get_elem_value_float_dp</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i1">get_child_value_integer_i1</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i1">get_elem_value_int_i1</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i2">get_child_value_integer_i2</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i2">get_elem_value_int_i2</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i4">get_child_value_integer_i4</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i4">get_elem_value_int_i4</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i8">get_child_value_integer_i8</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i8">get_elem_value_int_i8</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_bool">get_child_value_bool</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_bool">get_elem_value_bool</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_string">get_child_value_string</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_table">get_key_table</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_array">get_key_array</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_keyval">get_key_keyval</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_float_sp">get_key_value_float_sp</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_float_dp">get_key_value_float_dp</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i1">get_key_value_integer_i1</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i2">get_key_value_integer_i2</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i4">get_key_value_integer_i4</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i8">get_key_value_integer_i8</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_bool">get_key_value_bool</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_string">get_key_value_string</a>
       
     </div>
   </div>
@@ -233,7 +255,7 @@
     
     <div class="col-md-9" id='text'>
       <h2>public interface get_value</h2>
-   <p>Getter functions to manipulate TOML arrays</p>
+   <p>Getter functions to manipulate TOML tables</p>
      
      
     <br>
@@ -267,27 +289,49 @@
   <div id="modprocs-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_table">get_elem_table</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_table">get_child_table</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_array">get_elem_array</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_array">get_child_array</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_keyval">get_elem_keyval</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_keyval">get_child_keyval</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_string">get_elem_value_string</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_float_sp">get_child_value_float_sp</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_float_sp">get_elem_value_float_sp</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_float_dp">get_child_value_float_dp</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_float_dp">get_elem_value_float_dp</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i1">get_child_value_integer_i1</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i1">get_elem_value_int_i1</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i2">get_child_value_integer_i2</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i2">get_elem_value_int_i2</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i4">get_child_value_integer_i4</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i4">get_elem_value_int_i4</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_integer_i8">get_child_value_integer_i8</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_int_i8">get_elem_value_int_i8</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_bool">get_child_value_bool</a>
       
-      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_elem_value_bool">get_elem_value_bool</a>
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_child_value_string">get_child_value_string</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_table">get_key_table</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_array">get_key_array</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_keyval">get_key_keyval</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_float_sp">get_key_value_float_sp</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_float_dp">get_key_value_float_dp</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i1">get_key_value_integer_i1</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i2">get_key_value_integer_i2</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i4">get_key_value_integer_i4</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_integer_i8">get_key_value_integer_i8</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_bool">get_key_value_bool</a>
+      
+      <a class="list-group-item" href="../interface/get_value~2.html#moduleprocedure-get_key_value_string">get_key_value_string</a>
       
     </div>
   </div>
@@ -308,8 +352,8 @@
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_table"></span><h3>
-private subroutine get_elem_table(array, pos, ptr, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_table"></span><h3>
+private subroutine get_child_table(table, key, ptr, requested, stat)
     
     
    
@@ -337,12 +381,12 @@ private subroutine get_elem_table(array, pos, ptr, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -352,12 +396,12 @@ private subroutine get_elem_table(array, pos, ptr, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -382,6 +426,21 @@ private subroutine get_elem_table(array, pos, ptr, stat)
   
 <tr>
   
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>requested</strong></td><td><p>Child value must be present</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" ></span>integer,</td>
   <td>intent(out),</td>
   <td>optional</td>
@@ -404,8 +463,8 @@ private subroutine get_elem_table(array, pos, ptr, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_array"></span><h3>
-private subroutine get_elem_array(array, pos, ptr, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_array"></span><h3>
+private subroutine get_child_array(table, key, ptr, requested, stat)
     
     
    
@@ -433,12 +492,12 @@ private subroutine get_elem_array(array, pos, ptr, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -448,12 +507,12 @@ private subroutine get_elem_array(array, pos, ptr, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -478,6 +537,21 @@ private subroutine get_elem_array(array, pos, ptr, stat)
   
 <tr>
   
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>requested</strong></td><td><p>Child value must be present</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" ></span>integer,</td>
   <td>intent(out),</td>
   <td>optional</td>
@@ -500,8 +574,8 @@ private subroutine get_elem_array(array, pos, ptr, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_keyval"></span><h3>
-private subroutine get_elem_keyval(array, pos, ptr, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_keyval"></span><h3>
+private subroutine get_child_keyval(table, key, ptr, requested, stat)
     
     
    
@@ -529,12 +603,12 @@ private subroutine get_elem_keyval(array, pos, ptr, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -544,12 +618,12 @@ private subroutine get_elem_keyval(array, pos, ptr, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -565,6 +639,21 @@ private subroutine get_elem_keyval(array, pos, ptr, stat)
   
   <td>pointer</td><td>::</td>
   <td><strong>ptr</strong></td><td><p>Pointer to child value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>requested</strong></td><td><p>Child value must be present</p></td>
   
 </tr>
 
@@ -596,8 +685,813 @@ private subroutine get_elem_keyval(array, pos, ptr, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_string"></span><h3>
-private subroutine get_elem_value_string(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_float_sp"></span><h3>
+private subroutine get_child_value_float_sp(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as single precision float (might lose accuracy)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=tf_sp),</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>val</strong></td><td><p>Real value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=tf_sp),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default real value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_float_dp"></span><h3>
+private subroutine get_child_value_float_dp(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as double precision float</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=tf_dp),</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>val</strong></td><td><p>Real value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=tf_dp),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default real value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_integer_i1"></span><h3>
+private subroutine get_child_value_integer_i1(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as one byte integer (might loose precision)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i1),</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>val</strong></td><td><p>Integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i1),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_integer_i2"></span><h3>
+private subroutine get_child_value_integer_i2(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as two byte integer (might loose precision)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i2),</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>val</strong></td><td><p>Integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_integer_i4"></span><h3>
+private subroutine get_child_value_integer_i4(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as four byte integer (might loose precision)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i4),</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>val</strong></td><td><p>Integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i4),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_integer_i8"></span><h3>
+private subroutine get_child_value_integer_i8(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as eight byte integer</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i8),</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>val</strong></td><td><p>Integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=tf_i8),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_bool"></span><h3>
+private subroutine get_child_value_bool(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as logical</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(out)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>val</strong></td><td><p>Boolean value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default boolean value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_child_value_string"></span><h3>
+private subroutine get_child_value_string(table, key, val, default, stat)
     
     
    
@@ -629,12 +1523,12 @@ private subroutine get_elem_value_string(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -644,12 +1538,12 @@ private subroutine get_elem_value_string(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -674,6 +1568,21 @@ private subroutine get_elem_value_string(array, pos, val, stat)
   
 <tr>
   
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default string value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" ></span>integer,</td>
   <td>intent(out),</td>
   <td>optional</td>
@@ -696,8 +1605,8 @@ private subroutine get_elem_value_string(array, pos, val, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_float_sp"></span><h3>
-private subroutine get_elem_value_float_sp(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_table"></span><h3>
+private subroutine get_key_table(table, key, ptr, requested, stat)
     
     
    
@@ -705,10 +1614,6 @@ private subroutine get_elem_value_float_sp(array, pos, val, stat)
   <div class="panel-body">
        
     
-
-
-
-<p>Retrieve TOML value as single precision floating point number</p>
     
     <h4>Arguments</h4>
     
@@ -729,12 +1634,57 @@ private subroutine get_elem_value_float_sp(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(out),</td>
+  <td></td>
+  
+  <td>pointer</td><td>::</td>
+  <td><strong>ptr</strong></td><td><p>Pointer to child table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>requested</strong></td><td><p>Child value must be present</p></td>
   
 </tr>
 
@@ -745,11 +1695,303 @@ private subroutine get_elem_value_float_sp(array, pos, val, stat)
 <tr>
   
   <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_array"></span><h3>
+private subroutine get_key_array(table, key, ptr, requested, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td>intent(out),</td>
+  <td></td>
+  
+  <td>pointer</td><td>::</td>
+  <td><strong>ptr</strong></td><td><p>Pointer to child array</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>requested</strong></td><td><p>Child value must be present</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_keyval"></span><h3>
+private subroutine get_key_keyval(table, key, ptr, requested, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_keyval.html'>toml_keyval</a>),</td>
+  <td>intent(out),</td>
+  <td></td>
+  
+  <td>pointer</td><td>::</td>
+  <td><strong>ptr</strong></td><td><p>Pointer to child value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>requested</strong></td><td><p>Child value must be present</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_float_sp"></span><h3>
+private subroutine get_key_value_float_sp(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as single precision float (might lose accuracy)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -764,7 +2006,22 @@ private subroutine get_elem_value_float_sp(array, pos, val, stat)
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>val</strong></td><td><p>Floating point value</p></td>
+  <td><strong>val</strong></td><td><p>Real value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=tf_sp),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default real value</p></td>
   
 </tr>
 
@@ -796,8 +2053,8 @@ private subroutine get_elem_value_float_sp(array, pos, val, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_float_dp"></span><h3>
-private subroutine get_elem_value_float_dp(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_float_dp"></span><h3>
+private subroutine get_key_value_float_dp(table, key, val, default, stat)
     
     
    
@@ -808,7 +2065,7 @@ private subroutine get_elem_value_float_dp(array, pos, val, stat)
 
 
 
-<p>Retrieve TOML value as double precision floating point number</p>
+<p>Retrieve TOML value as double precision float</p>
     
     <h4>Arguments</h4>
     
@@ -829,12 +2086,12 @@ private subroutine get_elem_value_float_dp(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -844,12 +2101,12 @@ private subroutine get_elem_value_float_dp(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -864,7 +2121,22 @@ private subroutine get_elem_value_float_dp(array, pos, val, stat)
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>val</strong></td><td><p>Floating point value</p></td>
+  <td><strong>val</strong></td><td><p>Real value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=tf_dp),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default real value</p></td>
   
 </tr>
 
@@ -896,8 +2168,8 @@ private subroutine get_elem_value_float_dp(array, pos, val, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_int_i1"></span><h3>
-private subroutine get_elem_value_int_i1(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_integer_i1"></span><h3>
+private subroutine get_key_value_integer_i1(table, key, val, default, stat)
     
     
    
@@ -908,7 +2180,7 @@ private subroutine get_elem_value_int_i1(array, pos, val, stat)
 
 
 
-<p>Retrieve TOML value as integer value</p>
+<p>Retrieve TOML value as one byte integer (might loose precision)</p>
     
     <h4>Arguments</h4>
     
@@ -929,12 +2201,12 @@ private subroutine get_elem_value_int_i1(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -944,12 +2216,12 @@ private subroutine get_elem_value_int_i1(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -974,6 +2246,21 @@ private subroutine get_elem_value_int_i1(array, pos, val, stat)
   
 <tr>
   
+  <td><span class="anchor" ></span>integer(kind=tf_i1),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" ></span>integer,</td>
   <td>intent(out),</td>
   <td>optional</td>
@@ -996,8 +2283,8 @@ private subroutine get_elem_value_int_i1(array, pos, val, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_int_i2"></span><h3>
-private subroutine get_elem_value_int_i2(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_integer_i2"></span><h3>
+private subroutine get_key_value_integer_i2(table, key, val, default, stat)
     
     
    
@@ -1008,7 +2295,7 @@ private subroutine get_elem_value_int_i2(array, pos, val, stat)
 
 
 
-<p>Retrieve TOML value as integer value</p>
+<p>Retrieve TOML value as two byte integer (might loose precision)</p>
     
     <h4>Arguments</h4>
     
@@ -1029,12 +2316,12 @@ private subroutine get_elem_value_int_i2(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -1044,12 +2331,12 @@ private subroutine get_elem_value_int_i2(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -1074,6 +2361,21 @@ private subroutine get_elem_value_int_i2(array, pos, val, stat)
   
 <tr>
   
+  <td><span class="anchor" ></span>integer(kind=tf_i2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" ></span>integer,</td>
   <td>intent(out),</td>
   <td>optional</td>
@@ -1096,8 +2398,8 @@ private subroutine get_elem_value_int_i2(array, pos, val, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_int_i4"></span><h3>
-private subroutine get_elem_value_int_i4(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_integer_i4"></span><h3>
+private subroutine get_key_value_integer_i4(table, key, val, default, stat)
     
     
    
@@ -1108,7 +2410,7 @@ private subroutine get_elem_value_int_i4(array, pos, val, stat)
 
 
 
-<p>Retrieve TOML value as integer value</p>
+<p>Retrieve TOML value as four byte integer (might loose precision)</p>
     
     <h4>Arguments</h4>
     
@@ -1129,12 +2431,12 @@ private subroutine get_elem_value_int_i4(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -1144,12 +2446,12 @@ private subroutine get_elem_value_int_i4(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -1174,6 +2476,21 @@ private subroutine get_elem_value_int_i4(array, pos, val, stat)
   
 <tr>
   
+  <td><span class="anchor" ></span>integer(kind=tf_i4),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" ></span>integer,</td>
   <td>intent(out),</td>
   <td>optional</td>
@@ -1196,8 +2513,8 @@ private subroutine get_elem_value_int_i4(array, pos, val, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_int_i8"></span><h3>
-private subroutine get_elem_value_int_i8(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_integer_i8"></span><h3>
+private subroutine get_key_value_integer_i8(table, key, val, default, stat)
     
     
    
@@ -1208,7 +2525,7 @@ private subroutine get_elem_value_int_i8(array, pos, val, stat)
 
 
 
-<p>Retrieve TOML value as integer value</p>
+<p>Retrieve TOML value as eight byte integer</p>
     
     <h4>Arguments</h4>
     
@@ -1229,12 +2546,12 @@ private subroutine get_elem_value_int_i8(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -1244,12 +2561,12 @@ private subroutine get_elem_value_int_i8(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -1274,6 +2591,21 @@ private subroutine get_elem_value_int_i8(array, pos, val, stat)
   
 <tr>
   
+  <td><span class="anchor" ></span>integer(kind=tf_i8),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default integer value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" ></span>integer,</td>
   <td>intent(out),</td>
   <td>optional</td>
@@ -1296,8 +2628,8 @@ private subroutine get_elem_value_int_i8(array, pos, val, stat)
    
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-get_elem_value_bool"></span><h3>
-private subroutine get_elem_value_bool(array, pos, val, stat)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_bool"></span><h3>
+private subroutine get_key_value_bool(table, key, val, default, stat)
     
     
    
@@ -1308,7 +2640,7 @@ private subroutine get_elem_value_bool(array, pos, val, stat)
 
 
 
-<p>Retrieve TOML value as boolean</p>
+<p>Retrieve TOML value as logical</p>
     
     <h4>Arguments</h4>
     
@@ -1329,12 +2661,12 @@ private subroutine get_elem_value_bool(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>class(<a href='../type/toml_array.html'>toml_array</a>),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>array</strong></td><td><p>Instance of the TOML array</p></td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
   
 </tr>
 
@@ -1344,12 +2676,12 @@ private subroutine get_elem_value_bool(array, pos, val, stat)
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>pos</strong></td><td><p>Position in the array</p></td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
   
 </tr>
 
@@ -1364,7 +2696,137 @@ private subroutine get_elem_value_bool(array, pos, val, stat)
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>val</strong></td><td><p>Integer value</p></td>
+  <td><strong>val</strong></td><td><p>Boolean value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default boolean value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(out),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>stat</strong></td><td><p>Status of operation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+   
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-get_key_value_string"></span><h3>
+private subroutine get_key_value_string(table, key, val, default, stat)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+<p>Retrieve TOML value as deferred-length character</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/toml_table.html'>toml_table</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>table</strong></td><td><p>Instance of the TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/toml_key.html'>toml_key</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>key</strong></td><td><p>Key in this TOML table</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=:),</td>
+  <td>intent(out),</td>
+  <td></td>
+  
+  <td>allocatable</td><td>::</td>
+  <td><strong>val</strong></td><td><p>String value</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(kind=tfc,len=*),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>default</strong></td><td><p>Default string value</p></td>
   
 </tr>
 
@@ -1412,7 +2874,7 @@ private subroutine get_elem_value_bool(array, pos, val, stat)
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-             on 2021-11-23 10:04  
+             on 2021-12-12 13:30  
             
           </p>
         </div>
