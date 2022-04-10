@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="A TOML parser implementation for data serialization and deserialization in Fortran.">
-    
     <meta name="author" content="Sebastian Ehlert" >
     <link rel="icon" href="./favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="./css/pygments.css" rel="stylesheet">
     <link href="./css/font-awesome.min.css" rel="stylesheet">
     <link href="./css/local.css" rel="stylesheet">
-    
     <link  href="./tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="./lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="./lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="./lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="./lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="./lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="./lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="./lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="./lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="./lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="./lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="./lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="./lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="./search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,37 +72,23 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <p>A TOML parser implementation for data serialization and deserialization in Fortran.</p>
-        	 
 	<p> Find us on&hellip;</p>
         <p>
-			 
           <a class="btn btn-lg btn-primary" href="https://github.com/toml-f/toml-f" role="button">GitHub</a>
-			 
-			 
-			 
-			 
-			 
-	         
-			 
           <a class="btn btn-lg btn-danger" style="float:right" href="https://github.com/toml-f/toml-f/releases" role="button">Download the Source</a>
-			 
         </p>
       </div>
 
       <div class="row" id='text'>
-		  
         <div class="col-md-8">
-		  
           <h1>TOML-Fortran</h1>
           <p><a href="https://github.com/toml-f/toml-f/blob/master/LICENSE-Apache"><img alt="License" src="https://img.shields.io/badge/license-MIT%7CApache%202.0-blue"></a>
 <a href="https://github.com/toml-f/toml-f/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/toml-f/toml-f"></a>
@@ -157,10 +107,10 @@
 <a href="https://github.com/toml-f/tf-cmake-example"><img alt="template" src="https://img.shields.io/badge/template-cmake-success"></a></p>
 <h3 id="meson">Meson</h3>
 <p>Create a new meson project and include <code>toml-f</code> either as git-submodule in your subprojects directory or create a wrap file to fetch it from upstream:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">[wrap-git]</span>
-<span class="na">directory</span> <span class="o">=</span> <span class="s">toml-f</span>
-<span class="na">url</span> <span class="o">=</span> <span class="s">https://github.com/toml-f/toml-f</span>
-<span class="na">revision</span> <span class="o">=</span> <span class="s">head</span>
+<div class="codehilite"><pre><span></span><code><span class="k">[wrap-git]</span><span class="w"></span>
+<span class="na">directory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">toml-f</span><span class="w"></span>
+<span class="na">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">https://github.com/toml-f/toml-f</span><span class="w"></span>
+<span class="na">revision</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">head</span><span class="w"></span>
 </code></pre></div>
 
 <p>To load the project the necessary boilerplate code for subprojects is just</p>
@@ -199,13 +149,13 @@ Note for library type both and shared <code>toml-f</code> will install itself al
 
 <p>To include the project the necessary boilerplate code for subprojects is just</p>
 <div class="codehilite"><pre><span></span><code><span class="c"># subprojects/CMakeLists.txt</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">BUILD_SHARED_LIBS</span> <span class="s">OFF</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">BUILD_SHARED_LIBS</span><span class="w"> </span><span class="s">OFF</span><span class="p">)</span>
 <span class="nb">add_subdirectory</span><span class="p">(</span><span class="s2">&quot;toml-f&quot;</span><span class="p">)</span>
 <span class="nb">list</span><span class="p">(</span>
-  <span class="s">APPEND</span> <span class="s">lib-deps</span>
-  <span class="s2">&quot;toml-f-lib&quot;</span>
+<span class="w">  </span><span class="s">APPEND</span><span class="w"> </span><span class="s">lib-deps</span>
+<span class="w">  </span><span class="s2">&quot;toml-f-lib&quot;</span>
 <span class="p">)</span>
-<span class="nb">set</span><span class="p">(</span><span class="s">lib-deps</span> <span class="s2">&quot;${lib-deps}&quot;</span> <span class="s">PARENT_SCOPE</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="s">lib-deps</span><span class="w"> </span><span class="s2">&quot;${lib-deps}&quot;</span><span class="w"> </span><span class="s">PARENT_SCOPE</span><span class="p">)</span>
 </code></pre></div>
 
 <p>Now you can add <code>toml-f-lib</code> to your dependencies and access the public API by the <code>tomlf</code> module.</p>
@@ -214,170 +164,95 @@ The <code>toml-f</code> subproject will decide based on the library type if it s
 <h3 id="fortran-package-manager-fpm">Fortran Package Manager (fpm)</h3>
 <p>TOML-Fortran supports <a href="https://github.com/fortran-lang/fpm">fpm</a> as build system as well.
 Just add <code>toml-f</code> to the dependencies in your <code>fpm.toml</code> file:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">[dependencies]</span>
-<span class="k">[dependencies.toml-f]</span>
-<span class="n">git</span> <span class="o">=</span> <span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span>
+<div class="codehilite"><pre><span></span><code><span class="k">[dependencies]</span><span class="w"></span>
+<span class="k">[dependencies.toml-f]</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://github.com/toml-f/toml-f&quot;</span><span class="w"></span>
 </code></pre></div>
 
 <p>For a usage example of <code>toml-f</code> you can look-up the example in the TOML-Fortran repository (<a href="https://github.com/toml-f/toml-f/tree/master/test/example-1">example-1</a>) or just checkout <a href="https://github.com/fortran-lang/fpm">fpm</a> itself, which is using <code>toml-f</code>.</p>
         </div>
-		  
         <div class="col-md-4">
 	  <div class="well">
           <h2>Developer Info</h2>
           <h4>Sebastian Ehlert</h4>
           
-          
-			   
             <div class="text-center"><div class="btn-group" role="group">
-              
-              
-              
               <a class="btn btn-lg btn-primary" href="https://github.com/awvwgk"><i class="fa fa-github fa-lg"></i></a>
-              
-              
-				  
-              
-              
-              
-              
             </div></div>
-            
        </div>
        </div>
-       
       </div>
-      
-      
-      
-      
-      
-      
-		
-        
       <div class="row">
-        
         <div class="col-xs-6 col-sm-3">
               <h3>Source Files</h3>
-              <ul>
-                    <li><a href='./sourcefile/all.f90.html'>all.f90</a></li>
-                  
+              <ul>                    <li><a href='./sourcefile/all.f90.html'>all.f90</a></li>
                     <li><a href='./sourcefile/array.f90.html'>array.f90</a></li>
-                  
                     <li><a href='./sourcefile/array.f90~2.html'>array.f90</a></li>
-                  
                     <li><a href='./sourcefile/base.f90.html'>base.f90</a></li>
-                  
                     <li><a href='./sourcefile/build.f90.html'>build.f90</a></li>
-                  
                     <li><a href='./sourcefile/character.f90.html'>character.f90</a></li>
-                  
                     <li><a href='./sourcefile/constants.f90.html'>constants.f90</a></li>
-                  
                     <li><a href='./sourcefile/convert.f90.html'>convert.f90</a></li>
-                  
                     <li><a href='./sourcefile/datetime.f90.html'>datetime.f90</a></li>
-                  
                     <li><a href='./sourcefile/de.f90.html'>de.f90</a></li>
-                  </ul>
+</ul>
           </div>
-        
-          
 		  <div class="col-xs-6 col-sm-3">
               <h3>Modules</h3>
-              <ul>
-                    <li><a href='./module/tomlf.html'>tomlf</a></li>
-                  
+              <ul>                    <li><a href='./module/tomlf.html'>tomlf</a></li>
                     <li><a href='./module/tomlf_all.html'>tomlf_all</a></li>
-                  
                     <li><a href='./module/tomlf_build.html'>tomlf_build</a></li>
-                  
                     <li><a href='./module/tomlf_build_array.html'>tomlf_build_array</a></li>
-                  
                     <li><a href='./module/tomlf_build_keyval.html'>tomlf_build_keyval</a></li>
-                  
                     <li><a href='./module/tomlf_build_merge.html'>tomlf_build_merge</a></li>
-                  
                     <li><a href='./module/tomlf_build_table.html'>tomlf_build_table</a></li>
-                  
                     <li><a href='./module/tomlf_constants.html'>tomlf_constants</a></li>
-                  
                     <li><a href='./module/tomlf_datetime.html'>tomlf_datetime</a></li>
-                  
                     <li><a href='./module/tomlf_de.html'>tomlf_de</a></li>
-                  </ul>
+</ul>
           </div>
-          
-          
 		  <div class="col-xs-6 col-sm-3">
               <h3>Procedures</h3>
-              <ul>
-                    <li><a href='./interface/add_array.html'>add_array</a></li>
-                  
+              <ul>                    <li><a href='./interface/add_array.html'>add_array</a></li>
                     <li><a href='./interface/add_keyval.html'>add_keyval</a></li>
-                  
                     <li><a href='./interface/add_table.html'>add_table</a></li>
-                  
                     <li><a href='./interface/convert_raw.html'>convert_raw</a></li>
-                  
                     <li><a href='./proc/duplicate_key_error.html'>duplicate_key_error</a></li>
-                  
                     <li><a href='./proc/get_tomlf_version.html'>get_tomlf_version</a></li>
-                  
                     <li><a href='./interface/get_value.html'>get_value</a></li>
-                  
                     <li><a href='./interface/get_value~2.html'>get_value</a></li>
-                  
                     <li><a href='./interface/get_value~3.html'>get_value</a></li>
-                  
                     <li><a href='./proc/io_error.html'>io_error</a></li>
-                  </ul>
+</ul>
           </div>
-          
-          
 		  <div class="col-xs-6 col-sm-3">
               <h3>Derived Types</h3>
-              <ul>
-                    <li><a href='./type/toml_array.html'>toml_array</a></li>
-                  
+              <ul>                    <li><a href='./type/toml_array.html'>toml_array</a></li>
                     <li><a href='./type/toml_character_tokenizer.html'>toml_character_tokenizer</a></li>
-                  
                     <li><a href='./type/toml_context.html'>toml_context</a></li>
-                  
                     <li><a href='./type/toml_date.html'>toml_date</a></li>
-                  
                     <li><a href='./type/toml_datetime.html'>toml_datetime</a></li>
-                  
                     <li><a href='./type/toml_error.html'>toml_error</a></li>
-                  
                     <li><a href='./type/toml_key.html'>toml_key</a></li>
-                  
                     <li><a href='./type/toml_keyval.html'>toml_keyval</a></li>
-                  
                     <li><a href='./type/toml_ordered.html'>toml_ordered</a></li>
-                  
                     <li><a href='./type/toml_serializer.html'>toml_serializer</a></li>
-                  </ul>
+</ul>
           </div>
-          
       </div>
-      
-
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>TOML-Fortran was developed by Sebastian Ehlert<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>TOML-Fortran was developed by Sebastian Ehlert<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-             on 2021-12-12 13:30  
-            
-          </p>
+ on 2022-04-10 16:53            </p>
         </div>
       </div>
       <br>
@@ -404,14 +279,11 @@ Just add <code>toml-f</code> to the dependencies in your <code>fpm.toml</code> f
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="./tipuesearch/tipuesearch_content.js"></script>
     <script src="./tipuesearch/tipuesearch_set.js"></script>
     <script src="./tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

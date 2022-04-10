@@ -4,24 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="A TOML parser implementation for data serialization and deserialization in Fortran.">
-    
     <meta name="author" content="Sebastian Ehlert" >
     <link rel="icon" href="../favicon.png">
 
-    <title>
-All Procedures &ndash; TOML-Fortran
+    <title>All Procedures &ndash; TOML-Fortran
 </title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -50,58 +44,27 @@ All Procedures &ndash; TOML-Fortran
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -110,148 +73,89 @@ All Procedures &ndash; TOML-Fortran
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
       <div class="row">
         <div class="col-lg-12" id='text'>
 			 <h1>Procedures</h1>
 			 <table class="table table-striped">
 			 <thead><tr><th>Procedure</th><th>Location</th><th>Procedure Type</th><th>Description</th></tr></thead>
 			 <tbody>
-			 
 			   <tr><td><a href='../interface/add_array.html'>add_array</a></td><td><a href='../module/tomlf_type.html'>tomlf_type</a></td><td>Interface</td><td><p>Interface to build new arrays</p></td></tr>
-			 
 			   <tr><td><a href='../interface/add_keyval.html'>add_keyval</a></td><td><a href='../module/tomlf_type.html'>tomlf_type</a></td><td>Interface</td><td><p>Interface to build new key-value pairs</p></td></tr>
-			 
 			   <tr><td><a href='../interface/add_table.html'>add_table</a></td><td><a href='../module/tomlf_type.html'>tomlf_type</a></td><td>Interface</td><td><p>Interface to build new tables</p></td></tr>
-			 
 			   <tr><td><a href='../interface/convert_raw.html'>convert_raw</a></td><td><a href='../module/tomlf_utils_convert.html'>tomlf_utils_convert</a></td><td>Interface</td><td><p>Overloaded conversion interface</p></td></tr>
-			 
 			   <tr><td><a href='../proc/duplicate_key_error.html'>duplicate_key_error</a></td><td><a href='../module/tomlf_error.html'>tomlf_error</a></td><td>Subroutine</td><td><p>Key is present multiple times in a TOML document within the same table</p></td></tr>
-			 
 			   <tr><td><a href='../proc/get_tomlf_version.html'>get_tomlf_version</a></td><td><a href='../module/tomlf_version.html'>tomlf_version</a></td><td>Subroutine</td><td><p>Getter function to retrieve TOML-Fortran version</p></td></tr>
-			 
 			   <tr><td><a href='../interface/get_value.html'>get_value</a></td><td><a href='../module/tomlf_build_keyval.html'>tomlf_build_keyval</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML values</p></td></tr>
-			 
 			   <tr><td><a href='../interface/get_value~2.html'>get_value</a></td><td><a href='../module/tomlf_build_table.html'>tomlf_build_table</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML tables</p></td></tr>
-			 
 			   <tr><td><a href='../interface/get_value~3.html'>get_value</a></td><td><a href='../module/tomlf_build_array.html'>tomlf_build_array</a></td><td>Interface</td><td><p>Getter functions to manipulate TOML arrays</p></td></tr>
-			 
 			   <tr><td><a href='../proc/io_error.html'>io_error</a></td><td><a href='../module/tomlf_error.html'>tomlf_error</a></td><td>Subroutine</td><td><p>IO runtime error</p></td></tr>
-			 
 			   <tr><td><a href='../proc/is_array_of_tables.html'>is_array_of_tables</a></td><td><a href='../module/tomlf_type.html'>tomlf_type</a></td><td>Function</td><td><p>Determine if array contains only tables</p></td></tr>
-			 
 			   <tr><td><a href='../interface/len.html'>len</a></td><td><a href='../module/tomlf_structure.html'>tomlf_structure</a></td><td>Interface</td><td><p>Overload len function</p></td></tr>
-			 
 			   <tr><td><a href='../interface/len~2.html'>len</a></td><td><a href='../module/tomlf_type_array.html'>tomlf_type_array</a></td><td>Interface</td><td><p>Overload len function</p></td></tr>
-			 
 			   <tr><td><a href='../proc/merge_array.html'>merge_array</a></td><td><a href='../module/tomlf_build_merge.html'>tomlf_build_merge</a></td><td>Subroutine</td><td><p>Append values from one TOML array to another</p></td></tr>
-			 
 			   <tr><td><a href='../proc/merge_table.html'>merge_table</a></td><td><a href='../module/tomlf_build_merge.html'>tomlf_build_merge</a></td><td>Subroutine</td><td><p>Merge TOML tables by appending their values</p></td></tr>
-			 
 			   <tr><td><a href='../interface/new.html'>new</a></td><td><a href='../module/tomlf_ser.html'>tomlf_ser</a></td><td>Interface</td><td><p>Overloaded constructor for TOML serializers</p></td></tr>
-			 
 			   <tr><td><a href='../interface/new~2.html'>new</a></td><td><a href='../module/tomlf_type_keyval.html'>tomlf_type_keyval</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
-			 
 			   <tr><td><a href='../interface/new~3.html'>new</a></td><td><a href='../module/tomlf_type_table.html'>tomlf_type_table</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
-			 
 			   <tr><td><a href='../interface/new~4.html'>new</a></td><td><a href='../module/tomlf_type_array.html'>tomlf_type_array</a></td><td>Interface</td><td><p>Overloaded constructor for TOML values</p></td></tr>
-			 
 			   <tr><td><a href='../interface/new~5.html'>new</a></td><td><a href='../module/tomlf_de_character.html'>tomlf_de_character</a></td><td>Interface</td><td></td></tr>
-			 
 			   <tr><td><a href='../proc/new_array.html'>new_array</a></td><td><a href='../module/tomlf_type_array.html'>tomlf_type_array</a></td><td>Subroutine</td><td><p>Constructor to create a new TOML array and allocate the internal storage</p></td></tr>
-			 
 			   <tr><td><a href='../proc/new_character_tokenizer.html'>new_character_tokenizer</a></td><td><a href='../module/tomlf_de_character.html'>tomlf_de_character</a></td><td>Subroutine</td><td><p>Constructor for the deserializer implementation.
 connect deserializer to configuration
 first token is an artifical newline</p></td></tr>
-			 
 			   <tr><td><a href='../proc/new_keyval.html'>new_keyval</a></td><td><a href='../module/tomlf_type_keyval.html'>tomlf_type_keyval</a></td><td>Subroutine</td><td><p>Constructor to create a new TOML key-value pair</p></td></tr>
-			 
 			   <tr><td><a href='../proc/new_ordered.html'>new_ordered</a></td><td><a href='../module/tomlf_structure.html'>tomlf_structure</a></td><td>Subroutine</td><td><p>Constructor for the ordered storage data structure</p></td></tr>
-			 
 			   <tr><td><a href='../proc/new_serializer.html'>new_serializer</a></td><td><a href='../module/tomlf_ser.html'>tomlf_ser</a></td><td>Subroutine</td><td><p>Constructor to create new serializer instance</p></td></tr>
-			 
 			   <tr><td><a href='../proc/new_structure.html'>new_structure</a></td><td><a href='../module/tomlf_structure.html'>tomlf_structure</a></td><td>Subroutine</td><td><p>Constructor for the storage data structure</p></td></tr>
-			 
 			   <tr><td><a href='../proc/new_table.html'>new_table</a></td><td><a href='../module/tomlf_type_table.html'>tomlf_type_table</a></td><td>Subroutine</td><td><p>Constructor to create a new TOML table and allocate the internal storage</p></td></tr>
-			 
 			   <tr><td><a href='../proc/new_vector.html'>new_vector</a></td><td><a href='../module/tomlf_structure_vector.html'>tomlf_structure_vector</a></td><td>Subroutine</td><td><p>Constructor for the storage data structure</p></td></tr>
-			 
 			   <tr><td><a href='../interface/set_value.html'>set_value</a></td><td><a href='../module/tomlf_build_keyval.html'>tomlf_build_keyval</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML values</p></td></tr>
-			 
 			   <tr><td><a href='../interface/set_value~2.html'>set_value</a></td><td><a href='../module/tomlf_build_table.html'>tomlf_build_table</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML tables</p></td></tr>
-			 
 			   <tr><td><a href='../interface/set_value~3.html'>set_value</a></td><td><a href='../module/tomlf_build_array.html'>tomlf_build_array</a></td><td>Interface</td><td><p>Setter functions to manipulate TOML arrays</p></td></tr>
-			 
 			   <tr><td><a href='../interface/sort.html'>sort</a></td><td><a href='../module/tomlf_utils_sort.html'>tomlf_utils_sort</a></td><td>Interface</td><td><p>Create overloaded interface for export</p></td></tr>
-			 
 			   <tr><td><a href='../proc/syntax_error.html'>syntax_error</a></td><td><a href='../module/tomlf_error.html'>tomlf_error</a></td><td>Subroutine</td><td><p>A syntactic error in a TOML document was found</p></td></tr>
-			 
 			   <tr><td><a href='../interface/toml_array.html'>toml_array</a></td><td><a href='../module/tomlf_type_array.html'>tomlf_type_array</a></td><td>Interface</td><td><p>Create standard constructor</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_escape_string.html'>toml_escape_string</a></td><td><a href='../module/tomlf_utils.html'>tomlf_utils</a></td><td>Subroutine</td><td><p>Escape all special characters in a TOML string</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_get_value_type.html'>toml_get_value_type</a></td><td><a href='../module/tomlf_utils.html'>tomlf_utils</a></td><td>Function</td><td><p>Determine TOML value type</p></td></tr>
-			 
 			   <tr><td><a href='../interface/toml_parse.html'>toml_parse</a></td><td><a href='../module/tomlf_de.html'>tomlf_de</a></td><td>Interface</td><td></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_to_bool.html'>toml_raw_to_bool</a></td><td><a href='../module/tomlf_utils_convert.html'>tomlf_utils_convert</a></td><td>Function</td><td><p>Attempt to convert TOML raw value to Fortran logical</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_to_float.html'>toml_raw_to_float</a></td><td><a href='../module/tomlf_utils_convert.html'>tomlf_utils_convert</a></td><td>Function</td><td><p>Attempt to convert TOML raw value to Fortran real</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_to_integer.html'>toml_raw_to_integer</a></td><td><a href='../module/tomlf_utils_convert.html'>tomlf_utils_convert</a></td><td>Function</td><td><p>Attempt to convert TOML raw value to Fortran integer</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_to_string.html'>toml_raw_to_string</a></td><td><a href='../module/tomlf_utils_convert.html'>tomlf_utils_convert</a></td><td>Function</td><td></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_to_timestamp.html'>toml_raw_to_timestamp</a></td><td><a href='../module/tomlf_utils_convert.html'>tomlf_utils_convert</a></td><td>Function</td><td><p>Attempt to convert TOML raw value to TOML datetime</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_verify_bool.html'>toml_raw_verify_bool</a></td><td><a href='../module/tomlf_utils_verify.html'>tomlf_utils_verify</a></td><td>Function</td><td><p>Verify a raw value as TOML bool</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_verify_date.html'>toml_raw_verify_date</a></td><td><a href='../module/tomlf_utils_verify.html'>tomlf_utils_verify</a></td><td>Function</td><td><p>Verify a raw value as TOML date expression (YYYY-MM-DD)</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_verify_float.html'>toml_raw_verify_float</a></td><td><a href='../module/tomlf_utils_verify.html'>tomlf_utils_verify</a></td><td>Function</td><td><p>Verify a raw value as TOML float</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_verify_integer.html'>toml_raw_verify_integer</a></td><td><a href='../module/tomlf_utils_verify.html'>tomlf_utils_verify</a></td><td>Function</td><td><p>Verify a raw value as TOML integer</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_verify_string.html'>toml_raw_verify_string</a></td><td><a href='../module/tomlf_utils_verify.html'>tomlf_utils_verify</a></td><td>Function</td><td><p>Verify a raw value as TOML string</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_verify_time.html'>toml_raw_verify_time</a></td><td><a href='../module/tomlf_utils_verify.html'>tomlf_utils_verify</a></td><td>Function</td><td><p>Verify a raw value as TOML time expression (HH:MM:SS)</p></td></tr>
-			 
 			   <tr><td><a href='../proc/toml_raw_verify_timestamp.html'>toml_raw_verify_timestamp</a></td><td><a href='../module/tomlf_utils_verify.html'>tomlf_utils_verify</a></td><td>Function</td><td><p>Verify a raw value as TOML datetime expression</p></td></tr>
-			 
 			   <tr><td><a href='../interface/toml_serializer.html'>toml_serializer</a></td><td><a href='../module/tomlf_ser.html'>tomlf_ser</a></td><td>Interface</td><td><p>Create standard constructor</p></td></tr>
-			 
 			   <tr><td><a href='../interface/toml_table.html'>toml_table</a></td><td><a href='../module/tomlf_type_table.html'>tomlf_type_table</a></td><td>Interface</td><td><p>Create standard constructor</p></td></tr>
-			 
 			   <tr><td><a href='../interface/toml_time.html'>toml_time</a></td><td><a href='../module/tomlf_datetime.html'>tomlf_datetime</a></td><td>Interface</td><td></td></tr>
-			 
 			   <tr><td><a href='../proc/vendor_error.html'>vendor_error</a></td><td><a href='../module/tomlf_error.html'>tomlf_error</a></td><td>Subroutine</td><td><p>A shortcoming in the implementation or an internal error occured, rather</p></td></tr>
-			 
 			 </tbody></table>
              
         </div>
       </div>
-
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>TOML-Fortran was developed by Sebastian Ehlert<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>TOML-Fortran was developed by Sebastian Ehlert<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-             on 2021-12-12 13:30  
-            
-          </p>
+ on 2022-04-10 16:53            </p>
         </div>
       </div>
       <br>
@@ -278,14 +182,11 @@ first token is an artifical newline</p></td></tr>
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>

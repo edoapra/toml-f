@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   
    <meta name="description" content="A TOML parser implementation for data serialization and deserialization in Fortran.">
-    
     <meta name="author" content="Sebastian Ehlert" >
     <link rel="icon" href="../favicon.png">
 
@@ -16,10 +14,7 @@
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
-    
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-    
-    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -48,58 +43,27 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-        
             <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
               <a href="#" class="dropdown-toggle"
               data-toggle="dropdown" role="button"
               aria-haspopup="true"
      aria-expanded="false">Contents <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
-              
             <li><a href="../lists/files.html">Source Files</a></li>
-        
-        
-        
             <li><a href="../lists/modules.html">Modules</a></li>
-        
-            
-                                
             <li><a href="../lists/procedures.html">Procedures</a></li>
-        
-        
             <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
-               
-            <li><a href="../lists/types.html">Derived Types</a></li>
-        
-               
-        
-        
+                   <li><a href="../lists/types.html">Derived Types</a></li>
+       
             </ul>
         
             </li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
-
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
-
-
 <li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
-                             
-<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
-
-
-
-
+                             <li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
           </ul>
-        
         <form action="../search.html" class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -108,49 +72,28 @@
         <button type="submit" class="btn btn-default">Submit</button>
 -->
         </form>
-        
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
     <div class="container">
-    
-  
   <div class="row">
     <h1>tomlf_structure_vector 
     <small>Module</small>
-    
     </h1>
-    
-<div class="row">
+    <div class="row">
   <div class="col-lg-12">
 <div class="well well-sm">
   <ul class="list-inline" style="margin-bottom:0px;display:inline">
-     
-     
-     
-     
-     
-    
-    
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
     title=" 4.5% of total for modules and submodules.">171 statements</a>
      </li> 
-     
-     
-     
     <li><i class="fa fa-code"></i><a href="../src/vector.f90"> Source File</a></li>
-     
-     
   </ul>
   <ol class="breadcrumb in-well text-right">
-  
-    
      <li><a href='../sourcefile/vector.f90.html'>vector.f90</a></li>
-    
-  
      <li class="active">tomlf_structure_vector</li>
   </ol>
 </div>
@@ -166,56 +109,25 @@
   
   <div class="row">
     <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
-    
-<div id="sidebar">
-  
-<h3>Contents</h3>
+    <div id="sidebar">
+  <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-0">Derived Types</a></h3></div>
   <div id="types-0" class="panel-collapse collapse">
     <div class="list-group">
-      
       <a class="list-group-item" href="../module/tomlf_structure_vector.html#type-toml_vector">toml_vector</a>
-      
     </div>
   </div>
 </div>
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-0">Subroutines</a></h3></div>
   <div class="list-group">
     <div id="subs-0" class="panel-collapse collapse">
-      
       <a class="list-group-item" href="../module/tomlf_structure_vector.html#proc-new_vector">new_vector</a>
-      
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
 
 </div>
 
@@ -225,265 +137,138 @@
     <p>Implementation of a basic storage structure as pointer list of pointers.</p>
 <p>This implementation does purposely not use pointer attributes in the
 datastructure to make it safer to work with.</p>
-      <br>
-    
-  
-    <div class="panel panel-default">
+<br>        <div class="panel panel-default">
       <div class="panel-heading">
   <h3 class="panel-title">Uses</h3>
       </div>
       <ul class="list-group">
-      
       <li class="list-group-item">
   <ul class="list-inline">
-    
     <li><a href='../module/tomlf_constants.html'>tomlf_constants</a></li>
-    
-    <li><a href='../module/tomlf_structure_base.html'>tomlf_structure_base</a></li>
-    
     <li><a href='../module/tomlf_type_value.html'>tomlf_type_value</a></li>
-    
+    <li><a href='../module/tomlf_structure_base.html'>tomlf_structure_base</a></li>
   </ul>
       </li>
-      
-      
-      
       </ul>
     </div>
-    
 
     
-    
-
     <br>
 
     <section class="visible-xs visible-sm hidden-md">
-      
-<h3>Contents</h3>
+      <h3>Contents</h3>
  
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-1">Derived Types</a></h3></div>
   <div id="types-1" class="panel-collapse collapse">
     <div class="list-group">
-      
       <a class="list-group-item" href="../module/tomlf_structure_vector.html#type-toml_vector">toml_vector</a>
-      
     </div>
   </div>
 </div>
-
-
-
-
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-1">Subroutines</a></h3></div>
   <div class="list-group">
     <div id="subs-1" class="panel-collapse collapse">
-      
       <a class="list-group-item" href="../module/tomlf_structure_vector.html#proc-new_vector">new_vector</a>
-      
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
 
     </section>
     <br class="visible-xs visible-sm hidden-md">
 
-    
 
     
     
-    
-    
-    
 
-    
-    
     
     <section>
      <h2>Derived Types</h2>
-   
-     
-<div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="type-toml_vector"></span><h3>type, public, extends(<a href='../type/toml_ordered.html'>toml_ordered</a>) :: <a href='../type/toml_vector.html'>toml_vector</a>
-    
-  </h3></div>
+     <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-toml_vector"></span><h3>type, public, extends(<a href='../type/toml_ordered.html'>toml_ordered</a>) :: <a href='../type/toml_vector.html'>toml_vector</a>  </h3></div>
   <div class="panel-body">
-    
-    
     <p>Stores TOML values in a list of pointers</p>
-    
-     
-     
-          
      
      <h4>Type-Bound Procedures</h4>
       <table class="table table-striped varlist">
       <tbody>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-delete'>delete</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-delete~2'>delete</a></strong>  </td>
        <td><p>Delete TOML value at a given key</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-destroy'>destroy</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-destroy~5'>destroy</a></strong>  </td>
        <td><p>Destroy the data structure</p></td></tr>
-      
        <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-find'>find</a></strong>  </td>
        <td><p>Find a TOML value based on its key</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-get'>get</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-get~3'>get</a></strong>  </td>
        <td><p>Get TOML value at a given index</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-get_keys'>get_keys</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-get_keys~2'>get_keys</a></strong>  </td>
        <td><p>Get list of all keys in the structure</p></td></tr>
-      
        <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-get_len'>get_len</a></strong>  </td>
        <td><p>Get number of TOML values in the structure</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-pop'>pop</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-pop~2'>pop</a></strong>  </td>
        <td><p>Remove the last element from the structure</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-push_back'>push_back</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-push_back~3'>push_back</a></strong>  </td>
        <td><p>Push back a TOML value to the structure</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-shift'>shift</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/toml_vector.html#boundprocedure-shift~2'>shift</a></strong>  </td>
        <td><p>Remove the first element from the structure</p></td></tr>
-      
        </tbody>
        </table>
-     
   </div>
 </div>
 
-     
     </section>
   <br>
     
-    
-    
 
-    
     <section>
     <h2>Subroutines</h2>
-    
-    
-  <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-new_vector"></span><h3>
-public subroutine <a href='../proc/new_vector.html'>new_vector</a>(self, n)
-    
-    
-   
-</h3></div>
+      <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-new_vector"></span><h3>public subroutine <a href='../proc/new_vector.html'>new_vector</a>(self, n)</h3></div>
   <div class="panel-body">
        
-    
-
-
-
-
-
-
-
 <p>Constructor for the storage data structure</p>
     
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" ></span>type(<a href='../type/toml_vector.html'>toml_vector</a>),</td>
-  <td>intent(out)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
+<td>intent(out)</td>
+  <td></td>  <td></td><td>::</td>
   <td><strong>self</strong></td><td><p>Instance of the structure</p></td>
-  
 </tr>
-
-  
-  
-  
-  
 <tr>
-  
   <td><span class="anchor" ></span>integer,</td>
-  <td>intent(in),</td>
-  <td>optional</td>
-  
-  <td></td><td>::</td>
+<td>intent(in),</td>
+  <td>optional</td>  <td></td><td>::</td>
   <td><strong>n</strong></td><td><p>Initial storage capacity</p></td>
-  
 </tr>
-
 </tbody>
 </table>
 
-      
-    
-    
 
   </div>
   </div>
 
-    
     </section>    
     <br>
-    
-    
     
     </div>
   </div>
 
-  
     <hr>    
     </div> <!-- /container -->
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>TOML-Fortran was developed by Sebastian Ehlert<br>&copy; 2021 
-                                          </p>
+        <div class="col-xs-6 col-md-6"><p>TOML-Fortran was developed by Sebastian Ehlert<br>&copy; 2022 
+</p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-             on 2021-12-12 13:30  
-            
-          </p>
+ on 2022-04-10 16:53            </p>
         </div>
       </div>
       <br>
@@ -510,14 +295,11 @@ public subroutine <a href='../proc/new_vector.html'>new_vector</a>(self, n)
         extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
       });
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
     
     <script src="../tipuesearch/tipuesearch_content.js"></script>
     <script src="../tipuesearch/tipuesearch_set.js"></script>
     <script src="../tipuesearch/tipuesearch.js"></script>
-    
     
   </body>
 </html>
