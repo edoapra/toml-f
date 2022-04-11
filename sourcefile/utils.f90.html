@@ -88,7 +88,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 1.8% of total for source files.">68 statements</a>
+    title=" 2.0% of total for source files.">76 statements</a>
      </li> 
     <li><i class="fa fa-code"></i><a href="../src/utils.f90"> Source File</a></li>
   </ul>
@@ -223,7 +223,7 @@
 <a id="ln-66" name="ln-66" href="#ln-66"></a>
 <a id="ln-67" name="ln-67" href="#ln-67"></a>
 <a id="ln-68" name="ln-68" href="#ln-68"></a><span class="c">!&gt; Escape all special characters in a TOML string</span>
-<a id="ln-69" name="ln-69" href="#ln-69"></a><span class="k">subroutine </span><span class="n">toml_escape_string</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="n">escaped</span><span class="p">)</span><span class="w"></span>
+<a id="ln-69" name="ln-69" href="#ln-69"></a><span class="k">subroutine </span><span class="n">toml_escape_string</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="n">escaped</span><span class="p">,</span><span class="w"> </span><span class="n">multiline</span><span class="p">)</span><span class="w"></span>
 <a id="ln-70" name="ln-70" href="#ln-70"></a>
 <a id="ln-71" name="ln-71" href="#ln-71"></a><span class="w">   </span><span class="c">!&gt; Raw representation of TOML string</span>
 <a id="ln-72" name="ln-72" href="#ln-72"></a><span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">tfc</span><span class="p">,</span><span class="w"> </span><span class="nb">len</span><span class="o">=*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">raw</span><span class="w"></span>
@@ -231,27 +231,39 @@
 <a id="ln-74" name="ln-74" href="#ln-74"></a><span class="w">   </span><span class="c">!&gt; Escaped view of the TOML string</span>
 <a id="ln-75" name="ln-75" href="#ln-75"></a><span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">tfc</span><span class="p">,</span><span class="w"> </span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="w"> </span><span class="k">allocatable</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">escaped</span><span class="w"></span>
 <a id="ln-76" name="ln-76" href="#ln-76"></a>
-<a id="ln-77" name="ln-77" href="#ln-77"></a><span class="w">   </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="w"></span>
-<a id="ln-78" name="ln-78" href="#ln-78"></a>
-<a id="ln-79" name="ln-79" href="#ln-79"></a><span class="w">   </span><span class="n">escaped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&quot;&#39;</span><span class="w"></span>
-<a id="ln-80" name="ln-80" href="#ln-80"></a><span class="w">   </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span><span class="w"></span>
-<a id="ln-81" name="ln-81" href="#ln-81"></a><span class="w">      </span><span class="k">select case</span><span class="p">(</span><span class="n">raw</span><span class="p">(</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="p">))</span><span class="w"></span>
-<a id="ln-82" name="ln-82" href="#ln-82"></a><span class="w">      </span><span class="k">case </span><span class="n">default</span><span class="p">;</span><span class="w"> </span><span class="n">escaped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">escaped</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">raw</span><span class="p">(</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
-<a id="ln-83" name="ln-83" href="#ln-83"></a><span class="w">      </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;\&#39;); escaped = escaped // &#39;</span><span class="err">\\</span><span class="s1">&#39;</span>
-<a id="ln-84" name="ln-84" href="#ln-84"></a><span class="s1">      case(&#39;</span><span class="s2">&quot;&#39;); escaped = escaped // &#39;\&quot;&#39;</span>
-<a id="ln-85" name="ln-85" href="#ln-85"></a><span class="s2">      case(TOML_NEWLINE); escaped = escaped // &#39;\n&#39;</span>
-<a id="ln-86" name="ln-86" href="#ln-86"></a><span class="s2">      case(TOML_FORMFEED); escaped = escaped // &#39;\f&#39;</span>
-<a id="ln-87" name="ln-87" href="#ln-87"></a><span class="s2">      case(TOML_CARRIAGE_RETURN); escaped = escaped // &#39;\r&#39;</span>
-<a id="ln-88" name="ln-88" href="#ln-88"></a><span class="s2">      case(TOML_TABULATOR); escaped = escaped // &#39;\t&#39;</span>
-<a id="ln-89" name="ln-89" href="#ln-89"></a><span class="s2">      case(TOML_BACKSPACE); escaped = escaped // &#39;\b&#39;</span>
-<a id="ln-90" name="ln-90" href="#ln-90"></a><span class="s2">      end select</span>
-<a id="ln-91" name="ln-91" href="#ln-91"></a><span class="s2">   end do</span>
-<a id="ln-92" name="ln-92" href="#ln-92"></a><span class="s2">   escaped = escaped // &#39;&quot;</span><span class="err">&#39;</span><span class="w"></span>
-<a id="ln-93" name="ln-93" href="#ln-93"></a>
-<a id="ln-94" name="ln-94" href="#ln-94"></a><span class="k">end subroutine </span><span class="n">toml_escape_string</span><span class="w"></span>
-<a id="ln-95" name="ln-95" href="#ln-95"></a>
-<a id="ln-96" name="ln-96" href="#ln-96"></a>
-<a id="ln-97" name="ln-97" href="#ln-97"></a><span class="k">end module </span><span class="n">tomlf_utils</span><span class="w"></span>
+<a id="ln-77" name="ln-77" href="#ln-77"></a><span class="w">   </span><span class="c">!&gt; Preserve newline characters</span>
+<a id="ln-78" name="ln-78" href="#ln-78"></a><span class="w">   </span><span class="kt">logical</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">multiline</span><span class="w"></span>
+<a id="ln-79" name="ln-79" href="#ln-79"></a>
+<a id="ln-80" name="ln-80" href="#ln-80"></a><span class="w">   </span><span class="kt">integer</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">i</span><span class="w"></span>
+<a id="ln-81" name="ln-81" href="#ln-81"></a><span class="w">   </span><span class="kt">logical</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">preserve_newline</span><span class="w"></span>
+<a id="ln-82" name="ln-82" href="#ln-82"></a>
+<a id="ln-83" name="ln-83" href="#ln-83"></a><span class="w">   </span><span class="n">preserve_newline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">.</span><span class="n">false</span><span class="p">.</span><span class="w"></span>
+<a id="ln-84" name="ln-84" href="#ln-84"></a><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">present</span><span class="p">(</span><span class="n">multiline</span><span class="p">))</span><span class="w"> </span><span class="n">preserve_newline</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">multiline</span><span class="w"></span>
+<a id="ln-85" name="ln-85" href="#ln-85"></a>
+<a id="ln-86" name="ln-86" href="#ln-86"></a><span class="w">   </span><span class="n">escaped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&quot;&#39;</span><span class="w"></span>
+<a id="ln-87" name="ln-87" href="#ln-87"></a><span class="w">   </span><span class="k">do </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb">len</span><span class="p">(</span><span class="n">raw</span><span class="p">)</span><span class="w"></span>
+<a id="ln-88" name="ln-88" href="#ln-88"></a><span class="w">      </span><span class="k">select case</span><span class="p">(</span><span class="n">raw</span><span class="p">(</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="p">))</span><span class="w"></span>
+<a id="ln-89" name="ln-89" href="#ln-89"></a><span class="w">      </span><span class="k">case </span><span class="n">default</span><span class="p">;</span><span class="w"> </span><span class="n">escaped</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">escaped</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">raw</span><span class="p">(</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<a id="ln-90" name="ln-90" href="#ln-90"></a><span class="w">      </span><span class="k">case</span><span class="p">(</span><span class="s1">&#39;\&#39;); escaped = escaped // &#39;</span><span class="err">\\</span><span class="s1">&#39;</span>
+<a id="ln-91" name="ln-91" href="#ln-91"></a><span class="s1">      case(&#39;</span><span class="s2">&quot;&#39;); escaped = escaped // &#39;\&quot;&#39;</span>
+<a id="ln-92" name="ln-92" href="#ln-92"></a><span class="s2">      case(TOML_NEWLINE)</span>
+<a id="ln-93" name="ln-93" href="#ln-93"></a><span class="s2">         if (preserve_newline) then</span>
+<a id="ln-94" name="ln-94" href="#ln-94"></a><span class="s2">            escaped = escaped // raw(i:i)</span>
+<a id="ln-95" name="ln-95" href="#ln-95"></a><span class="s2">         else</span>
+<a id="ln-96" name="ln-96" href="#ln-96"></a><span class="s2">            escaped = escaped // &#39;\n&#39;</span>
+<a id="ln-97" name="ln-97" href="#ln-97"></a><span class="s2">         end if</span>
+<a id="ln-98" name="ln-98" href="#ln-98"></a><span class="s2">      case(TOML_FORMFEED); escaped = escaped // &#39;\f&#39;</span>
+<a id="ln-99" name="ln-99" href="#ln-99"></a><span class="s2">      case(TOML_CARRIAGE_RETURN); escaped = escaped // &#39;\r&#39;</span>
+<a id="ln-100" name="ln-100" href="#ln-100"></a><span class="s2">      case(TOML_TABULATOR); escaped = escaped // &#39;\t&#39;</span>
+<a id="ln-101" name="ln-101" href="#ln-101"></a><span class="s2">      case(TOML_BACKSPACE); escaped = escaped // &#39;\b&#39;</span>
+<a id="ln-102" name="ln-102" href="#ln-102"></a><span class="s2">      end select</span>
+<a id="ln-103" name="ln-103" href="#ln-103"></a><span class="s2">   end do</span>
+<a id="ln-104" name="ln-104" href="#ln-104"></a><span class="s2">   escaped = escaped // &#39;&quot;</span><span class="err">&#39;</span><span class="w"></span>
+<a id="ln-105" name="ln-105" href="#ln-105"></a>
+<a id="ln-106" name="ln-106" href="#ln-106"></a><span class="k">end subroutine </span><span class="n">toml_escape_string</span><span class="w"></span>
+<a id="ln-107" name="ln-107" href="#ln-107"></a>
+<a id="ln-108" name="ln-108" href="#ln-108"></a>
+<a id="ln-109" name="ln-109" href="#ln-109"></a><span class="k">end module </span><span class="n">tomlf_utils</span><span class="w"></span>
 </pre></div>
 
     </section>
@@ -270,7 +282,7 @@
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
- on 2022-04-10 20:38            </p>
+ on 2022-04-11 11:47            </p>
         </div>
       </div>
       <br>

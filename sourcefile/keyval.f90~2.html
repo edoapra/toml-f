@@ -88,7 +88,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 6.5% of total for source files.">249 statements</a>
+    title=" 6.4% of total for source files.">246 statements</a>
      </li> 
     <li><i class="fa fa-code"></i><a href="../src/keyval.f90"> Source File</a></li>
   </ul>
@@ -182,7 +182,7 @@
 <a id="ln-25" name="ln-25" href="#ln-25"></a><span class="w">      </span><span class="p">&amp;</span><span class="w"> </span><span class="n">new_table</span><span class="p">,</span><span class="w"> </span><span class="n">new_array</span><span class="p">,</span><span class="w"> </span><span class="n">new_keyval</span><span class="p">,</span><span class="w"> </span><span class="n">add_table</span><span class="p">,</span><span class="w"> </span><span class="n">add_array</span><span class="p">,</span><span class="w"> </span><span class="n">add_keyval</span><span class="p">,</span><span class="w"> </span><span class="nb">len</span>
 <a id="ln-26" name="ln-26" href="#ln-26"></a><span class="nb">   </span><span class="k">use </span><span class="n">tomlf_utils</span><span class="p">,</span><span class="w"> </span><span class="k">only</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">toml_raw_to_string</span><span class="p">,</span><span class="w"> </span><span class="n">toml_raw_to_float</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
 <a id="ln-27" name="ln-27" href="#ln-27"></a><span class="w">      </span><span class="p">&amp;</span><span class="w"> </span><span class="n">toml_raw_to_bool</span><span class="p">,</span><span class="w"> </span><span class="n">toml_raw_to_integer</span><span class="p">,</span><span class="w"> </span><span class="n">toml_raw_to_timestamp</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span><span class="w"></span>
-<a id="ln-28" name="ln-28" href="#ln-28"></a><span class="w">      </span><span class="p">&amp;</span><span class="w"> </span><span class="n">toml_raw_verify_string</span><span class="w"></span>
+<a id="ln-28" name="ln-28" href="#ln-28"></a><span class="w">      </span><span class="p">&amp;</span><span class="w"> </span><span class="n">toml_raw_verify_string</span><span class="p">,</span><span class="w"> </span><span class="n">toml_escape_string</span><span class="w"></span>
 <a id="ln-29" name="ln-29" href="#ln-29"></a><span class="w">   </span><span class="k">implicit none</span>
 <a id="ln-30" name="ln-30" href="#ln-30"></a><span class="k">   private</span>
 <a id="ln-31" name="ln-31" href="#ln-31"></a>
@@ -617,22 +617,20 @@
 <a id="ln-460" name="ln-460" href="#ln-460"></a><span class="w">   </span><span class="c">!&gt; Status of operation</span>
 <a id="ln-461" name="ln-461" href="#ln-461"></a><span class="w">   </span><span class="kt">integer</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="nb">stat</span>
 <a id="ln-462" name="ln-462" href="#ln-462"></a>
-<a id="ln-463" name="ln-463" href="#ln-463"></a><span class="nb">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">toml_raw_verify_string</span><span class="p">(</span><span class="n">val</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
-<a id="ln-464" name="ln-464" href="#ln-464"></a><span class="k">      </span><span class="n">self</span><span class="p">%</span><span class="n">raw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="w"></span>
-<a id="ln-465" name="ln-465" href="#ln-465"></a><span class="w">   </span><span class="k">else</span>
-<a id="ln-466" name="ln-466" href="#ln-466"></a><span class="k">      if</span><span class="w"> </span><span class="p">(</span><span class="nb">index</span><span class="p">(</span><span class="n">val</span><span class="p">,</span><span class="w"> </span><span class="n">TOML_NEWLINE</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-<a id="ln-467" name="ln-467" href="#ln-467"></a><span class="k">         </span><span class="n">self</span><span class="p">%</span><span class="n">raw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&quot;&quot;&quot;&#39;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="s1">&#39;&quot;&quot;&quot;&#39;</span><span class="w"></span>
-<a id="ln-468" name="ln-468" href="#ln-468"></a><span class="w">      </span><span class="k">else</span>
-<a id="ln-469" name="ln-469" href="#ln-469"></a><span class="k">         </span><span class="n">self</span><span class="p">%</span><span class="n">raw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&quot;&#39;</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="s1">&#39;&quot;&#39;</span><span class="w"></span>
-<a id="ln-470" name="ln-470" href="#ln-470"></a><span class="w">      </span><span class="k">end if</span>
-<a id="ln-471" name="ln-471" href="#ln-471"></a><span class="k">   end if</span>
+<a id="ln-463" name="ln-463" href="#ln-463"></a><span class="nb">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="w"> </span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">escaped</span><span class="w"></span>
+<a id="ln-464" name="ln-464" href="#ln-464"></a>
+<a id="ln-465" name="ln-465" href="#ln-465"></a><span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">toml_raw_verify_string</span><span class="p">(</span><span class="n">val</span><span class="p">))</span><span class="w"> </span><span class="k">then</span>
+<a id="ln-466" name="ln-466" href="#ln-466"></a><span class="k">      </span><span class="n">self</span><span class="p">%</span><span class="n">raw</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">val</span><span class="w"></span>
+<a id="ln-467" name="ln-467" href="#ln-467"></a><span class="w">   </span><span class="k">else</span>
+<a id="ln-468" name="ln-468" href="#ln-468"></a><span class="k">      call </span><span class="n">toml_escape_string</span><span class="p">(</span><span class="n">val</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="p">%</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="p">.</span><span class="n">true</span><span class="p">.)</span><span class="w"></span>
+<a id="ln-469" name="ln-469" href="#ln-469"></a><span class="w">   </span><span class="k">end if</span>
+<a id="ln-470" name="ln-470" href="#ln-470"></a>
+<a id="ln-471" name="ln-471" href="#ln-471"></a><span class="k">   if</span><span class="w"> </span><span class="p">(</span><span class="nb">present</span><span class="p">(</span><span class="nb">stat</span><span class="p">))</span><span class="w"> </span><span class="nb">stat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">toml_stat</span><span class="p">%</span><span class="n">success</span><span class="w"></span>
 <a id="ln-472" name="ln-472" href="#ln-472"></a>
-<a id="ln-473" name="ln-473" href="#ln-473"></a><span class="k">   if</span><span class="w"> </span><span class="p">(</span><span class="nb">present</span><span class="p">(</span><span class="nb">stat</span><span class="p">))</span><span class="w"> </span><span class="nb">stat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">toml_stat</span><span class="p">%</span><span class="n">success</span><span class="w"></span>
+<a id="ln-473" name="ln-473" href="#ln-473"></a><span class="k">end subroutine </span><span class="n">set_value_string</span><span class="w"></span>
 <a id="ln-474" name="ln-474" href="#ln-474"></a>
-<a id="ln-475" name="ln-475" href="#ln-475"></a><span class="k">end subroutine </span><span class="n">set_value_string</span><span class="w"></span>
-<a id="ln-476" name="ln-476" href="#ln-476"></a>
-<a id="ln-477" name="ln-477" href="#ln-477"></a>
-<a id="ln-478" name="ln-478" href="#ln-478"></a><span class="k">end module </span><span class="n">tomlf_build_keyval</span><span class="w"></span>
+<a id="ln-475" name="ln-475" href="#ln-475"></a>
+<a id="ln-476" name="ln-476" href="#ln-476"></a><span class="k">end module </span><span class="n">tomlf_build_keyval</span><span class="w"></span>
 </pre></div>
 
     </section>
@@ -651,7 +649,7 @@
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
- on 2022-04-10 20:38            </p>
+ on 2022-04-11 11:47            </p>
         </div>
       </div>
       <br>
